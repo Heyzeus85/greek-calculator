@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(195, 224, 230, 0.7);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    display: block;
+    width: 500px;
+}
+
+.display {
+    background-color: rgb(86, 95, 90);
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    text-align: right;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: white;
+    padding: 5px 0;
+}
+
+.keypad {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
+}
+
+button {
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.equals {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;;
+}
+
+.greek {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+
+
+
+
+
+
+
