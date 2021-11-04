@@ -1,25 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans&display=swap');
+
+html {
+    scroll-behavior: calc();
+}
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(195, 224, 230, 0.7);
+    background-color: #fffcf0;
     margin: 0;
-    display: flex;
+}
+
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #0d5eaf;
+    color: #fff;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.logo {
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    font-size: 2rem;
+    margin: 25px 15px 15px 15px;
+}
+
+.navlinks {
+    margin: 15px;
+}
+
+a {
+    color: #fff;
+}
+
+.navlinks ul li {
+    display: inline;
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.instruct {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-family: 'Quattrocento', serif;
+}
+
+.instruct h2 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.instruct li {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 .calculator {
     display: block;
-    width: 500px;
+    width: 60%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
 }
 
 .display {
-    background-color: rgb(86, 95, 90);
+    background-color: rgba(13, 94, 175, 0.5);
     width: 100%;
     height: 60px;
     margin-bottom: 10px;
@@ -57,6 +117,37 @@ button {
     grid-row-end: 6;
     grid-column-start: 4;
     grid-column-end: 5;
+}
+
+.about {
+    text-align: left;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-family: 'Quattrocento', serif;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+#nav {
+    font-size: 1rem;
+}
+
+.about p {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.enlarge {
+    font-size: 1.3rem;
+}
+
+.about a {
+    color: #0d5eaf;
 }
 
 

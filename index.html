@@ -8,28 +8,86 @@
     <title>Greek Number Calculator</title>
 </head>
 <body>
-    <div class="calculator">
-        <div class="display"></div>
-        <div class="keypad">
-            <button class="operator" value="+">+</button>
-            <button class="operator" value="-">-</button>
-            <button class="operator" value="*">&times</button>
-            <button class="operator" value="/">&divide</button>
-            <button class="digit" value=7>7</button>
-            <button class="digit" value=8>8</button>
-            <button class="digit" value=9>9</button>
-            <button class="digit" value=4>4</button>
-            <button class="digit" value=5>5</button>
-            <button class="digit" value=6>6</button>
-            <button class="digit" value=1>1</button>
-            <button class="digit" value=2>2</button>
-            <button class="digit" value=3>3</button>
-            <button class="digit" value=0>0</button>
-            <button class="decimal" value=".">.</button>
-            <button class="clear" value="clear">AC</button>
-            <button class="equals" value="=">=</button>
-            <button class="greek" value="greek">Greek</button>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            Greek Number Calculator
         </div>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#about">About Greek Numbers</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="instruct">
+            <h2>Instructions:</h2>
+            <ol>
+                <li>This calculator takes in two (2) numbers as input only. That is, it can only handle problems like
+                    'a' plus/minus/times/over 'b' = 'c'.
+                </li>
+                <li>When you enter a number, if you hit the Greek button it will rewrite that number 
+                    with ancient Greek number notation!</li>
+                <li>If you enter an expression for a calculation involving two numbers, you can hit the Greek button to rewrite
+                    both numbers with ancient Greek number notation.
+                </li>
+                <li>The calculator cannot convert negative numbers (but it will calculate with them) and it will only convert numbers 
+                    between 0.01 and 10,000 (the ancient Greeks had problems with these numbers as well).
+                </li>
+            </ol>
+        </div>
+        <div class="calculator">
+            <div class="display"></div>
+            <div class="keypad">
+                <button class="operator" value="+">+</button>
+                <button class="operator" value="-">-</button>
+                <button class="operator" value="*">&times</button>
+                <button class="operator" value="/">&divide</button>
+                <button class="digit" value=7>7</button>
+                <button class="digit" value=8>8</button>
+                <button class="digit" value=9>9</button>
+                <button class="digit" value=4>4</button>
+                <button class="digit" value=5>5</button>
+                <button class="digit" value=6>6</button>
+                <button class="digit" value=1>1</button>
+                <button class="digit" value=2>2</button>
+                <button class="digit" value=3>3</button>
+                <button class="digit" value=0>0</button>
+                <button class="decimal" value=".">.</button>
+                <button class="clear" value="clear">AC</button>
+                <button class="equals" value="=">=</button>
+                <button class="greek" value="greek">Greek</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id = "about">
+        <h1>About Greek Numbers <span id="nav"><a href="#navbar">top</a></span></h1>
+        <p>
+            The ancient Greeks eventually settled on an alphabetic number system, where the first nine letters were used to 
+            represent numbers 1-9 (they had no concept of zero), the next nine represented multiples of ten (10, 20, 30,...)
+            and the next nine represented multiples of one hundred (100, 200, 300,...). To represent thousands, the ancient 
+            Greeks used the first nine with a special tick mark at the bottom left.
+        </p>
+        <p>
+            So for example, let's say you want to write the number one hundred twenty three (123). The symbol used for 100 was 
+            <span class="enlarge">ρ</span>, the symbol for twenty was <span class="enlarge">κ</span> and the symbol 
+            for 3 was <span class="enlarge">γ</span>, so the notation would become: <span class="enlarge">ρκγ</span>
+        </p>
+        <p>
+            The Greeks had no decimal symbol and no knowledge of place value, but they did know of fractions and had a notation for them:
+            (numerator)'(denominator)''(denominator)''. So for example, if you want to represent the fraction four fifths note that 
+            the numerator is 4, and the symbol for that is <span class="enlarge">δ</span>, and the denominator is 5, for which the symbol is 
+            <span class="enlarge">ε</span>, so you would write the fraction like this: <span class="enlarge">δ'ε''ε''</span>
+        </p>
+        <p>
+            In order for this calculator to represent decimals, it first has to convert the decimal into a simplified fraction 
+            and then convert the integer numerator and denominators into Greek notation, and then assemble it into the fraction
+            notation shown above.
+        </p>
+        <p>
+            If you want to learn more about this number system, an excellent resource is the 
+            <a href="https://mathshistory.st-andrews.ac.uk/HistTopics/Greek_numbers/">MacTutor</a> entry on Greek number systems.
+        </p>
     </div>
 
     <script src="script.js"></script>
