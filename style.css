@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento&family=Quattrocento+Sans&display=swap');
 
 html {
-    scroll-behavior: calc();
+    scroll-behavior: smooth;
 }
 
 * {
@@ -148,6 +148,13 @@ button {
 
 .about a {
     color: #0d5eaf;
+}
+
+#footer {
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
