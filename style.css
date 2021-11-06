@@ -48,7 +48,7 @@ a {
 
 .container {
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .instruct {
@@ -155,6 +155,52 @@ button {
     margin: auto;
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 680px) {
+    * {
+        border: 1px solid red;
+    }
+
+    .body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navlinks ul li {
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .container {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .instruct {
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .calculator {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .about {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .about p {
+        word-wrap: break-word;
+    }
 }
 
 
